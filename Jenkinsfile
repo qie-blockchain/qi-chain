@@ -1,6 +1,6 @@
 pipeline {
      agent {
-         label 'int-node-stg-3'
+         label 'int-node-stg-1'
      }
      stages {
         stage("Build") {
