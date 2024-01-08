@@ -1,0 +1,2 @@
+./qichain secrets init --data-dir test-chain-1
+./qichain  server --data-dir ./test-chain-1  --chain genesis.json --grpc-address :10000 --libp2p 172.16.0.228:10001 --jsonrpc 172.16.0.228:10002 --seal --block-time 5
