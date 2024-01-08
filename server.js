@@ -371,6 +371,12 @@ const contractABI = [
 
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
+app.get('/', (req, res) => {
+res.send("hello world")
+
+})  
+
+
 app.get("/getAllValidators", async (req, res) => {
   try {
     // Perform the contract call
@@ -414,7 +420,7 @@ app.post("/stake", async (req, res) => {
     );
     const isStaker = await contract.isValidator(wallet.address);
     if (!isStaker && value < 5) {
-      res.json({
+      res.status(500).json({
         result: "sorry you are a new validator so must stake at least 5 QI",
         error: 1,
       });
