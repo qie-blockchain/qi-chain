@@ -378,7 +378,7 @@ res.send("hello world")
 })  
 app.get('/getStakeTransaction', async(req, res) => {
   // res.send("hello world")
-  let txn = await getAllTransactions()
+ try{ let txn = await getAllTransactions()
   // res.send(txn)
   let returnObj = []
   for(i in txn){
@@ -389,13 +389,16 @@ app.get('/getStakeTransaction', async(req, res) => {
       }
     }
   }
-  res.send(returnObj)
+  res.send(returnObj)}catch(error){
+    console.log(error)
+    res.status(500).send(error)
+  }
   // await insertTransaction('publicKey2', 'hash2', 200);
   })  
   
   app.get('/getunStakeTransaction', async(req, res) => {
     // res.send("hello world")
-    let txn = await getAllTransactions()
+    try{let txn = await getAllTransactions()
     // res.send(txn)
     let returnObj = []
     for(i in txn){
@@ -407,7 +410,10 @@ app.get('/getStakeTransaction', async(req, res) => {
         
       }
     }
-    res.send(returnObj)
+    res.send(returnObj)}catch(error){
+      console.log(error)
+      res.status(500).send(error)
+    }
     // await insertTransaction('publicKey2', 'hash2', 200);
     })  
 
