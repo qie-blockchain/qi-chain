@@ -5,11 +5,12 @@ const { exec } = require("child_process");
 const cors = require('cors'); //
 const app = express();
 const port = 2058;
+const {insertTransaction, getAllTransactions} = require('./mongotest')
 app.use(bodyParser.json());
 app.use(cors());
 
 // Ethereum provider
-const provider = new ethers.JsonRpcProvider("http://172.16.0.228:10002/");
+const provider = new ethers.JsonRpcProvider("http://182.72.203.254:20002/");
 
 const contractAddress = "0x0000000000000000000000000000000000001001";
 const contractABI = [
@@ -371,12 +372,91 @@ const contractABI = [
 
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
-app.get('/', (req, res) => {
+app.get('/', async(req, res) => {
 res.send("hello world")
-
+// await insertTransaction('publicKey2', 'hash2', 200);
 })  
+app.get('/getStakeTransaction', async(req, res) => {
+  // res.send("hello world")
+ try{ let txn = await getAllTransactions()
+  // res.send(txn)
+  let returnObj = []
+  for(i in txn){
+    console.log(i)
+    if(txn[i]['isStake']){
+      if(txn[i].isStake === true){
+        returnObj.push(txn[i])
+      }
+    }
+  }
+  res.send(returnObj)}catch(error){
+    console.log(error)
+    res.status(500).send(error)
+  }
+  // await insertTransaction('publicKey2', 'hash2', 200);
+  })  
+  
+  app.get('/getunStakeTransaction', async(req, res) => {
+    // res.send("hello world")
+    try{let txn = await getAllTransactions()
+    // res.send(txn)
+    let returnObj = []
+    for(i in txn){
+      console.log(i)
+   
+        console.log(txn[i])
+        if(txn[i].isStake === false){
+          returnObj.push(txn[i])
+        
+      }
+    }
+    res.send(returnObj)}catch(error){
+      console.log(error)
+      res.status(500).send(error)
+    }
+    // await insertTransaction('publicKey2', 'hash2', 200);
+    })  
 
-
+    app.post("/searchBarStake", async (req, res) => {
+      try {
+        let {address} = req.body
+        let returnObj = []
+        let txn = await getAllTransactions()
+        for(let i in txn){
+          if(txn[i].publicKey === address && txn[i].isStake === true)
+          {
+            returnObj.push(txn[i])
+          }
+        }
+        res.send(returnObj)
+        
+      } catch (error) {
+        console.error("Error:", error.message);
+        res.status(500).json({ error: "Internal Server Error" });
+      }
+    });
+    
+  
+    app.post("/searchBarUnstake", async (req, res) => {
+      try {
+        let {address} = req.body
+        let returnObj = []
+        let txn = await getAllTransactions()
+        for(let i in txn){
+          if(txn[i].publicKey === address && txn[i].isStake === false)
+          {
+            returnObj.push(txn[i])
+          }
+        }
+        res.send(returnObj)
+        
+      } catch (error) {
+        console.error("Error:", error.message);
+        res.status(500).json({ error: "Internal Server Error" });
+      }
+    });
+    
+    
 app.get("/getAllValidators", async (req, res) => {
   try {
     // Perform the contract call
@@ -406,9 +486,7 @@ app.get("/getAllValidators", async (req, res) => {
 
 app.post("/stake", async (req, res) => {
   try {
-    // Perform the contract call
-    //   const result = await contract.validators.call(); // Replace with your contract function
-    // console.log(req);
+
     const { privateKey, value } = req.body;
     console.log(privateKey);
     const wallet = new ethers.Wallet(privateKey);
@@ -431,9 +509,18 @@ app.post("/stake", async (req, res) => {
     const receipt = await tx.wait();
 
     console.log("Staked", tx.hash, receipt);
-
+    console.log(receipt.from, receipt.hash, value, receipt.blockNumber)
+    let from = receipt.from
+    let hash = receipt.hash
+    let blockNumber = receipt.blockNumber
     let responseOnj = { status: "success", result: tx.hash, reciept: receipt };
     // Respond with the result
+    console.log("adding values to the database")
+
+    console.log(from, hash, blockNumber)
+    await insertTransaction(from, hash, value, blockNumber, true)
+    console.log("data successfully instered")
+
     res.json({ responseOnj });
   } catch (error) {
     console.error("Error:", error.message);
@@ -443,9 +530,6 @@ app.post("/stake", async (req, res) => {
 
 app.post("/unstake", async (req, res) => {
   try {
-    // Perform the contract call
-    //   const result = await contract.validators.call(); // Replace with your contract function
-    // console.log(req);
     const { privateKey } = req.body;
     const wallet = new ethers.Wallet(privateKey);
     const newWallet = wallet.connect(provider);
@@ -456,17 +540,45 @@ app.post("/unstake", async (req, res) => {
     );
     const isStaker = await contract.isValidator(wallet.address);
     if (!isStaker) {
-      res.json({
+      return res.json({
         result: "sorry you are not a validator so cannot unstake",
         error: 1,
       });
     }
+    const stakedBalance = await contract.accountStake(wallet.address);
+    console.log("staked balance", stakedBalance)
     const tx = await contract.connect(newWallet).unstake();
     const receipt = await tx.wait();
 
     console.log("Staked", tx.hash, receipt);
 
     let responseOnj = { status: "success", result: tx.hash, reciept: receipt };
+    // Respond with the result
+    let from = receipt.from
+    let hash = receipt.hash
+    let blockNumber = receipt.blockNumber
+    console.log("insterting values into the data base")
+    await insertTransaction(from, hash, ethers.formatEther(stakedBalance), blockNumber, false)
+    console.log("inserted values into the data base")
+
+    res.json({ responseOnj });
+  } catch (error) {
+    console.error("Error:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+app.post("/getBalance", async (req, res) => {
+  try {
+    const { privateKey } = req.body;
+    const wallet = new ethers.Wallet(privateKey);
+    const newWallet = wallet.connect(provider);
+    console.log(wallet.address, "public key");
+    const availableBalance = await provider.getBalance(wallet.address)
+    let responseOnj = {
+      status: "success",
+      result: ethers.formatEther(availableBalance),
+    };
     // Respond with the result
     res.json({ responseOnj });
   } catch (error) {
