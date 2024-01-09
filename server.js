@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Ethereum provider
-const provider = new ethers.JsonRpcProvider("http://182.72.203.254:20002/");
+const provider = new ethers.JsonRpcProvider("http://172.16.0.228:10002/");
 
 const contractAddress = "0x0000000000000000000000000000000000001001";
 const contractABI = [
