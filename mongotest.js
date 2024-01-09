@@ -30,12 +30,15 @@ async function connectToMongo() {
   const { client, collection } = await connectToMongo();
 
   try {
+    const timestamp = new Date(); // Get current datetime
+
     const result = await collection.insertOne({
       publicKey,
       transactionHash,
       value,
       blockNumber,
-      isStake
+      isStake,
+      timestamp
     });
 
     console.log('Transaction inserted:', result.insertedId);
