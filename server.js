@@ -5,7 +5,7 @@ const { exec } = require("child_process");
 const cors = require('cors'); //
 const app = express();
 const port = 2058;
-const {insertTransaction, getAllTransactions} = require('./mongotest')
+const { insertTransaction, getAllTransactions } = require('./mongotest')
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -372,91 +372,92 @@ const contractABI = [
 
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
-app.get('/', async(req, res) => {
-res.send("hello world")
-// await insertTransaction('publicKey2', 'hash2', 200);
-})  
-app.get('/getStakeTransaction', async(req, res) => {
+app.get('/', async (req, res) => {
+  res.send("hello world")
+  // await insertTransaction('publicKey2', 'hash2', 200);
+})
+
+app.get('/getStakeTransaction', async (req, res) => {
   // res.send("hello world")
- try{ let txn = await getAllTransactions()
-  // res.send(txn)
-  let returnObj = []
-  for(i in txn){
-    console.log(i)
-    if(txn[i]['isStake']){
-      if(txn[i].isStake === true){
-        returnObj.push(txn[i])
+  try {
+    let txn = await getAllTransactions()
+    // res.send(txn)
+    let returnObj = []
+    for (i in txn) {
+      console.log(i)
+      if (txn[i]['isStake']) {
+        if (txn[i].isStake === true) {
+          returnObj.push(txn[i])
+        }
       }
     }
-  }
-  res.send(returnObj)}catch(error){
+    res.send(returnObj)
+  } catch (error) {
     console.log(error)
     res.status(500).send(error)
   }
   // await insertTransaction('publicKey2', 'hash2', 200);
-  })  
-  
-  app.get('/getunStakeTransaction', async(req, res) => {
-    // res.send("hello world")
-    try{let txn = await getAllTransactions()
+})
+
+app.get('/getunStakeTransaction', async (req, res) => {
+  // res.send("hello world")
+  try {
+    let txn = await getAllTransactions()
     // res.send(txn)
     let returnObj = []
-    for(i in txn){
+    for (i in txn) {
       console.log(i)
-   
-        console.log(txn[i])
-        if(txn[i].isStake === false){
-          returnObj.push(txn[i])
-        
-      }
-    }
-    res.send(returnObj)}catch(error){
-      console.log(error)
-      res.status(500).send(error)
-    }
-    // await insertTransaction('publicKey2', 'hash2', 200);
-    })  
 
-    app.post("/searchBarStake", async (req, res) => {
-      try {
-        let {address} = req.body
-        let returnObj = []
-        let txn = await getAllTransactions()
-        for(let i in txn){
-          if(txn[i].publicKey === address && txn[i].isStake === true)
-          {
-            returnObj.push(txn[i])
-          }
-        }
-        res.send(returnObj)
-        
-      } catch (error) {
-        console.error("Error:", error.message);
-        res.status(500).json({ error: "Internal Server Error" });
+      console.log(txn[i])
+      if (txn[i].isStake === false) {
+        returnObj.push(txn[i])
+
       }
-    });
-    
-  
-    app.post("/searchBarUnstake", async (req, res) => {
-      try {
-        let {address} = req.body
-        let returnObj = []
-        let txn = await getAllTransactions()
-        for(let i in txn){
-          if(txn[i].publicKey === address && txn[i].isStake === false)
-          {
-            returnObj.push(txn[i])
-          }
-        }
-        res.send(returnObj)
-        
-      } catch (error) {
-        console.error("Error:", error.message);
-        res.status(500).json({ error: "Internal Server Error" });
+    }
+    res.send(returnObj)
+  } catch (error) {
+    console.log(error)
+    res.status(500).send(error)
+  }
+  // await insertTransaction('publicKey2', 'hash2', 200);
+})
+
+app.post("/searchBarStake", async (req, res) => {
+  try {
+    let { address } = req.body
+    let returnObj = []
+    let txn = await getAllTransactions()
+    for (let i in txn) {
+      if (txn[i].publicKey === address && txn[i].isStake === true) {
+        returnObj.push(txn[i])
       }
-    });
-    
-    
+    }
+    res.send(returnObj)
+
+  } catch (error) {
+    console.error("Error:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+app.post("/searchBarUnstake", async (req, res) => {
+  try {
+    let { address } = req.body
+    let returnObj = []
+    let txn = await getAllTransactions()
+    for (let i in txn) {
+      if (txn[i].publicKey === address && txn[i].isStake === false) {
+        returnObj.push(txn[i])
+      }
+    }
+    res.send(returnObj)
+
+  } catch (error) {
+    console.error("Error:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 app.get("/getAllValidators", async (req, res) => {
   try {
     // Perform the contract call
@@ -472,7 +473,7 @@ app.get("/getAllValidators", async (req, res) => {
       responseOnj.push({
         address: result[i],
         stakedBalance: ethers.formatEther(res).toString(),
-        balance:ethers.formatEther(balance.toString()).toString()
+        balance: ethers.formatEther(balance.toString()).toString()
       });
     }
     // Respond with the result
@@ -609,7 +610,8 @@ app.post("/getStakeBalance", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
-app.get("/createNode", async(req, res) => {
+
+app.get("/createNode", async (req, res) => {
   try {
     // Replace 'your-script.sh' with the actual name of your shell script
     // const scriptPath = "./createNode.sh";
@@ -618,67 +620,67 @@ app.get("/createNode", async(req, res) => {
 
     // Run the shell script
     let accountInfo = await new Promise((resolve, reject) => {
-        exec(`./qichain secrets init --data-dir test-chain-${randomString}`, (error, stdout, stderr) => {
-          if (error) {
-            console.error("Error:", error.message);
-            reject(error);
-            return;
-          }
-  
-          console.log(stdout);
-  
-          const regex = /Public key \(address\) = (0x[a-fA-F0-9]+)\nBLS Public key\s+= (0x[a-fA-F0-9]+)\nNode ID\s+= ([^\n]+)/;
-  
-          // Use the regular expression to extract the values
-          const matches = stdout.match(regex);
-  
-          // Create an object to store the extracted values
-          const resultObject = {
-            publicKey: matches[1],
-            blsPublicKey: matches[2],
-            nodeId: matches[3],
-          };
-  
-          console.log(resultObject);
-          resolve(resultObject);
-        });
+      exec(`./qichain secrets init --data-dir test-chain-${randomString}`, (error, stdout, stderr) => {
+        if (error) {
+          console.error("Error:", error.message);
+          reject(error);
+          return;
+        }
+
+        console.log(stdout);
+
+        const regex = /Public key \(address\) = (0x[a-fA-F0-9]+)\nBLS Public key\s+= (0x[a-fA-F0-9]+)\nNode ID\s+= ([^\n]+)/;
+
+        // Use the regular expression to extract the values
+        const matches = stdout.match(regex);
+
+        // Create an object to store the extracted values
+        const resultObject = {
+          publicKey: matches[1],
+          blsPublicKey: matches[2],
+          nodeId: matches[3],
+        };
+
+        console.log(resultObject);
+        resolve(resultObject);
       });
-      const privateKey = await new Promise((resolve, reject) => {
-        exec(`cat test-chain-${randomString}/consensus/validator.key`, (error, stdout, stderr) => {
-          if (error) {
-            console.error("Error:", error.message);
-            reject(error);
-            return;
-          }
-  
-          const privateKeyValue = stdout.trim(); // Remove trailing newline characters
-          resolve(privateKeyValue);
-        });
+    });
+    const privateKey = await new Promise((resolve, reject) => {
+      exec(`cat test-chain-${randomString}/consensus/validator.key`, (error, stdout, stderr) => {
+        if (error) {
+          console.error("Error:", error.message);
+          reject(error);
+          return;
+        }
+
+        const privateKeyValue = stdout.trim(); // Remove trailing newline characters
+        resolve(privateKeyValue);
       });
-  
+    });
+
     console.log(accountInfo, "accountInfo", privateKey, "privatekey");
     accountInfo.privateKey = privateKey
     console.log(accountInfo, "final account infi");
     const randomPort = Math.floor(Math.random() * (65535 - 10001 + 1)) + 10001;
 
     const runScr = await new Promise((resolve, reject) => {
-        const pm2Command = `pm2 start ./qichain -- server --data-dir ./test-chain-${randomString} --chain genesis.json --grpc-address :${randomPort} --libp2p $(hostname -I | awk '{print $1;}'):10001 --jsonrpc $(hostname -I | awk '{print $1;}'):10002 --seal --block-time 5`;
-      
-        exec(pm2Command, (error, stdout, stderr) => {
-          if (error) {
-            console.error("Error:", error.message);
-            reject(error);
-            return;
-          }
-      
-          console.log(stdout);
-      
-          // Resolve the promise without waiting for the process to complete
-          resolve({ message: 'Command started successfully.' });
-        });
+      const pm2Command = `pm2 start ./qichain -- server --data-dir ./test-chain-${randomString} --chain genesis.json --grpc-address :${randomPort} --libp2p $(hostname -I | awk '{print $1;}'):10001 --jsonrpc $(hostname -I | awk '{print $1;}'):10002 --seal --block-time 5`;
+
+      exec(pm2Command, (error, stdout, stderr) => {
+        if (error) {
+          console.error("Error:", error.message);
+          reject(error);
+          return;
+        }
+
+        console.log(stdout);
+
+        // Resolve the promise without waiting for the process to complete
+        resolve({ message: 'Command started successfully.' });
       });
-      console.log("hello");
-      res.json({"status":"success", "nodeInfo":accountInfo})
+    });
+    console.log("hello");
+    res.json({ "status": "success", "nodeInfo": accountInfo })
   } catch (error) {
     console.error("Error:", error.message);
     res.status(500).json({ error: "Internal Server Error" });
