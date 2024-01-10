@@ -5,12 +5,12 @@ const { exec } = require("child_process");
 const cors = require('cors'); //
 const app = express();
 const port = 2058;
-const { insertTransaction, getAllTransactions } = require('./mongotest')
+const { insertTransaction, getAllTransactions, createAndInsertObject , retrieveValues} = require('./mongotest')
 app.use(bodyParser.json());
 app.use(cors());
 
 // Ethereum provider
-const provider = new ethers.JsonRpcProvider("http://182.72.203.254:20002/");
+const provider = new ethers.JsonRpcProvider("http://172.16.0.228:10002/");
 
 const contractAddress = "0x0000000000000000000000000000000000001001";
 const contractABI = [
@@ -440,6 +440,49 @@ app.post("/searchBarStake", async (req, res) => {
   }
 });
 
+app.post("/checkRpc", async (req, res) => {
+  try {
+    let { rpcUrl, publicKey } = req.body
+    let returnObj = []
+ 
+    let providernew; // Declare providernew outside the try-catch block
+
+    try{
+       providernew = new ethers.JsonRpcProvider(rpcUrl)
+      
+    let balancePromise  = await providernew.getBalance("0xAB47Afa099b383C950377BF4aFF5747C0a9A10d6")
+    const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('Connection timeout')), timeout));
+
+    // Wait for either the balance or timeout
+    let balance = await Promise.race([balancePromise, timeoutPromise]);
+  
+    // If the balance is received, log it
+    console.log(balance);
+    console.log(balance)
+    let txn = await getAllTransactions()
+ 
+    await createAndInsertObject({rpcUrl, publicKey})
+  }catch(error){
+      console.log(error)
+      console.log(providernew.destroy())
+      return res.status(500).json({
+        "error":error.toString(),
+        "status":false
+      })
+    }
+    return res.status(200).json({"status":true})
+  }
+    catch(error){
+      console.log(error)
+      return res.status(500).json({
+        "error":error.toString(),
+        "status":false
+      })
+    }
+});
+
+
+
 app.post("/searchBarUnstake", async (req, res) => {
   try {
     let { address } = req.body
@@ -488,7 +531,7 @@ app.get("/getAllValidators", async (req, res) => {
 app.post("/stake", async (req, res) => {
   try {
 
-    const { privateKey, value } = req.body;
+    const { privateKey, value, rpcUrl } = req.body;
     console.log(privateKey);
     const wallet = new ethers.Wallet(privateKey);
     const newWallet = wallet.connect(provider);
@@ -497,6 +540,26 @@ app.post("/stake", async (req, res) => {
       contractABI,
       provider
     );
+    let values = await retrieveValues()
+    let pubKey = newWallet.address
+    console.log(pubKey)
+    for(let i in values){
+      console.log("pub", pubKey, values[i].publicKey)
+      if(values[i].publicKey!==undefined){
+        console.log(values[i].publicKey, pubKey.toString().toLowerCase(), values[i].publicKey.toString().toLowerCase())
+        if((pubKey.toString().toLowerCase() === values[i].publicKey.toString().toLowerCase() && rpcUrl=== values[i].publicKey)){
+
+          console.log("good correct RPC")
+          break
+        }
+      }else{
+        return res.status(500).json({
+          result: "sorry, you dont own that RPC",
+          error: 1,
+        });
+      }
+    }
+    console.log(values)
     const isStaker = await contract.isValidator(wallet.address);
     if (!isStaker && value < 5) {
       return res.status(500).json({
