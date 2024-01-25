@@ -35,7 +35,7 @@ defmodule BlockScoutWeb.API.RPC.StatsController do
     render(conn, "ethsupplyexchange.json", total_supply: wei_total_supply)
   end
 
-  def ethsupply(conn, _params) do
+  def qisupply(conn, _params) do
     cached_wei_total_supply = AddressSum.get_sum()
 
     render(conn, "ethsupply.json", total_supply: cached_wei_total_supply)
