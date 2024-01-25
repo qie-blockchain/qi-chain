@@ -65,7 +65,7 @@ msgstr ""
 
 #: lib/block_scout_web/templates/layout/_default_title.html.eex:2
 #, elixir-autogen, elixir-format
-msgid "%{subnetwork} Explorer - BlockScout"
+msgid "%{subnetwork} Explorer - Qi"
 msgstr ""
 
 #: lib/block_scout_web/views/transaction_view.ex:369
@@ -164,7 +164,7 @@ msgstr ""
 
 #: lib/block_scout_web/templates/api_docs/_metatags.html.eex:2
 #, elixir-autogen, elixir-format
-msgid "API for the %{subnetwork} - BlockScout"
+msgid "API for the %{subnetwork} - Qi"
 msgstr ""
 
 #: lib/block_scout_web/templates/account/api_key/form.html.eex:7
@@ -2763,7 +2763,7 @@ msgstr ""
 
 #: lib/block_scout_web/templates/api_docs/index.html.eex:6
 #, elixir-autogen, elixir-format
-msgid "This API is provided for developers transitioning their applications from Etherscan to BlockScout. It supports GET and POST requests."
+msgid "This API is provided for developers transitioning their applications on QI. It supports GET and POST requests."
 msgstr ""
 
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:7

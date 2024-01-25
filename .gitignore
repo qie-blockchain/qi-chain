@@ -1,0 +1,4 @@
+docker-compose/logs
+docker-compose/services/blockscout-db-data
+docker-compose/services/redis-data
+

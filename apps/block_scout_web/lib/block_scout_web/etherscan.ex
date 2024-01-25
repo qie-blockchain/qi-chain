@@ -1221,7 +1221,7 @@ defmodule BlockScoutWeb.Etherscan do
   @account_eth_get_balance_action %{
     name: "eth_get_balance",
     description:
-      "Mimics Ethereum JSON RPC's eth_getBalance. Returns the balance as of the provided block (defaults to latest)",
+      "Mimics QI JSON RPC's qie_getBalance. Returns the balance as of the provided block (defaults to latest)",
     required_params: [
       %{
         key: "address",
@@ -2190,7 +2190,7 @@ defmodule BlockScoutWeb.Etherscan do
 
   @block_eth_block_number_action %{
     name: "eth_block_number",
-    description: "Mimics Ethereum JSON RPC's eth_blockNumber. Returns the latest block number",
+    description: "Mimics QI JSON RPC's qi_blockNumber. Returns the latest block number",
     required_params: [],
     optional_params: [
       %{
@@ -2649,7 +2649,7 @@ defmodule BlockScoutWeb.Etherscan do
   @contract_verifysourcecode_action %{
     name: "verifysourcecode",
     description: """
-    Verify a contract with Standard input JSON file. Its interface the same as <a href="https://docs.etherscan.io/tutorials/verifying-contracts-programmatically">Etherscan</a>'s API endpoint
+    Verify a contract with Standard input JSON file. Its interface the same as QI scan's API endpoint
     <br/>
     <br/>
     """,
