@@ -1,0 +1,128 @@
+[
+    {
+        "number": 1,
+        "contractName": "QIDEX",
+        "symbol": "QIDEX",
+        "previousContractAddress": "0x0f2380E602dD7EA5d717D8BF78c52496F1D54A96",
+        "newContractAddress": "0x88969f1A3be84b15E077C23E63035EBCD5594F21"
+    },
+    {
+        "number": 2,
+        "contractName": "Binance USD",
+        "symbol": "BUSD",
+        "previousContractAddress": "0xD7D7715039dF8056A8B9f6463B48853C0CD210AF",
+        "newContractAddress": "0x834c82aae43CA9aF0F398E1Bbd5bAC6D34c9B3F7"
+    },
+    {
+        "number": 3,
+        "contractName": "Ethereum main network",
+        "symbol": "ETH",
+        "previousContractAddress": "0x4E139DA14234660a74a2022304939a21cb9a74e6",
+        "newContractAddress": "0x54D667FC5bc81f2448AAc25036a801696e5b82F2"
+    },
+    {
+        "number": 4,
+        "contractName": "Tether USD",
+        "symbol": "USDT",
+        "previousContractAddress": "0x1Ca9da5B2c15917E95cb6C978E7621963D005ccB",
+        "newContractAddress": "0x6f3E906c2F936Bae46609fAD18da1eD39370a54e"
+    },
+    {
+        "number": 5,
+        "contractName": "BaseSpace",
+        "symbol": "BSS",
+        "previousContractAddress": "0xd98791c19C88cBD64bC4180Bd5B090bAA87c2761",
+        "newContractAddress": "0x248F472C3b12CB19Ff42e4521aC7Be21b716fE99"
+    },
+    {
+        "number": 6,
+        "contractName": "BUSD",
+        "symbol": "BUSD",
+        "previousContractAddress": "0x756d1CB1F9e97895ACae67955CA678B810EC79A2",
+        "newContractAddress": "0x67D36d55e8Da433b6529ECc9aAee54fdFF7B4DD7"
+    },
+    {
+        "number": 7,
+        "contractName": "QI Blockchain - Mainnet",
+        "symbol": "QIE",
+        "previousContractAddress": "0x844f1bfc9f8BA2C71c8236A75714Eb872aD44040",
+        "newContractAddress": "0xe5F4711F648176952859528A90BdDE3D1A1DB46A"
+    },
+    {
+        "number": 8,
+        "contractName": "Test Token",
+        "symbol": "TT",
+        "previousContractAddress": "0x396a1b505174bA22D54570C2744Da6EC3C312D51",
+        "newContractAddress": "0xa1a2eA6F04fa04950f140f85565E3e6957A73F28"
+    },
+    {
+        "number": 9,
+        "contractName": "IEVE",
+        "symbol": "IEVE",
+        "previousContractAddress": "0x99F243A4b2ada68c8f99A0658EB7D3b76F6b3456",
+        "newContractAddress": "0xCC369EB87C68f0a3Ef90E19284F097e5BF75Aa89"
+    },
+    {
+        "number": 10,
+        "contractName": "infinity",
+        "symbol": "INF",
+        "previousContractAddress": "0x25AF05D1116966c2Aeec95E44d702eEF3A8dA67C",
+        "newContractAddress": "0xD6Ff9578BBeCDe7E5B6e638eD7d7AB4406C41180"
+    },
+    {
+        "number": 11,
+        "contractName": "Farnus",
+        "symbol": "F",
+        "previousContractAddress": "0x558A300681314a2634C4E849Aa21186628279C2F",
+        "newContractAddress": "0x515aaAE135A8D3c795f3FDc0d26E1044Cd462044"
+    },
+    {
+        "number": 12,
+        "contractName": "IndianCode",
+        "symbol": "INCO",
+        "previousContractAddress": "0x3E7EbF0082751510fa64cDE0C7692A9Ce1d394C0",
+        "newContractAddress": "0xfDfdE8410CF41a568afC13c191a3D36E2C813ccD"
+    },
+    {
+        "number": 13,
+        "contractName": "MemeGold",
+        "symbol": "MEMG",
+        "previousContractAddress": "0xFaE186d23BB3BC3c973E6FE23C17527E54D92840",
+        "newContractAddress": "0xE2eb128A4A067F7D6437b5746B20F459da2E17e5"
+    },
+    {
+        "number": 14,
+        "contractName": "USDC",
+        "symbol": "USDC",
+        "previousContractAddress": "0x0f21E1B1F90473c6b4088a417278ABA7C0C0fc0e",
+        "newContractAddress": "0x0494A944D7854e303B7C97C8F4E2EccD35aC7c1B"
+    },
+    {
+        "number": 15,
+        "contractName": "COBA",
+        "symbol": "COBA",
+        "previousContractAddress": "0xDa2c7273C4a6F06e7DDEF2b07748959f38AA619d",
+        "newContractAddress": "0x3576fb3208243f8b37B63FcB34DC090137374009"
+    },
+    {
+        "number": 16,
+        "contractName": "IEVE",
+        "symbol": "IEVE",
+        "previousContractAddress": "0xf9816FBAf0410c26c7b331e633F59B519f2d9a2f",
+        "newContractAddress": "0x323468b83C269B5bc5ED23eeA1fc68eDE63ec1A4"
+    },
+    {
+        "number": 17,
+        "contractName": "MemeGold",
+        "symbol": "MEMG",
+        "previousContractAddress": "0xf84E05918c10BAA858a2508bdEf373A5e7A256f5",
+        "newContractAddress": "0x81DC94607eEF8126d85a2e384152eceE07874754"
+    },
+    {
+        "number": 18,
+        "contractName": "USDQ",
+        "symbol": "uSDQ",
+        "previousContractAddress": "0x4DbA80b2BfE67D6F9FdeD22A6DF5EB59d418563E",
+        "newContractAddress": "0xe05D447628f07BC7CDBc4019efED15bf8F5DFCb8"
+    }
+]

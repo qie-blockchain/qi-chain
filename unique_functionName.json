@@ -1,0 +1,19 @@
+{
+    "uniqueFunctionNames": [
+      "swapExactTokensForETH",
+      "addLiquidityETH",
+      "swapTokensForExactETH",
+      "swapExactETHForTokens",
+      "swapExactTokensForTokens",
+      "swapTokensForExactTokens",
+      "addLiquidity",
+      "swapETHForExactTokens",
+      "removeLiquidityETHWithPermit",
+      "removeLiquidityWithPermit",
+      "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
+      "removeLiquidity",
+      "removeLiquidityETHSupportingFeeOnTransferTokens",
+      "swapExactTokensForETHSupportingFeeOnTransferTokens",
+      "swapExactETHForTokensSupportingFeeOnTransferTokens"
+    ]
+  }

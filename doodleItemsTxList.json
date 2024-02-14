@@ -1,0 +1,71 @@
+[
+  {
+    "functionName": "setBaseURI",
+    "args": [
+      {}
+    ]
+  },
+  {
+    "functionName": "setBatchTokenURI",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "setTokenURI",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "setTokenURI",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "grantRole",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "setTokenURI",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "grantRole",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "grantRole",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "setTokenURI",
+    "args": [
+      {},
+      {}
+    ]
+  },
+  {
+    "functionName": "grantRole",
+    "args": [
+      {},
+      {}
+    ]
+  }
+]

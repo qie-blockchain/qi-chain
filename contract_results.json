@@ -1,0 +1,16 @@
+{
+  "publicVars": {
+    "accTokenPerShare": "17924067260313273930278042",
+    "rewardPerBlock": "27600000000000000000",
+    "totalStaked": "4194274101729663317501946",
+    "totalUsers": "185",
+    "availableRewardTokens": "15865093644550854726151958"
+  },
+  "constructorArgs": {
+    "rewardPerBlock": "27600000000000000000",
+    "depositFee": "0",
+    "withdrawFee": "0",
+    "rewardToken": "0x0f2380E602dD7EA5d717D8BF78c52496F1D54A96",
+    "poolLimitPerUser": "0"
+  }
+}

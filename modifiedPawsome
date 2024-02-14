@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "address": "0xc2d3e68b4e8cf2f71506f12fb19e7cf65999f241",
+      "value": "12"
+    },
+    {
+      "address": "0xde8d80a173df549eda90b42adc21165154233be8",
+      "value": "14"
+    },
+    {
+      "address": "0xd59cda8717c8d51abd3221f62ac757170c78d961",
+      "value": "2"
+    },
+    {
+      "address": "0xa2729176dd7e6042b9d38e2b7e16ad1b0ed6e415",
+      "value": "1"
+    }
+  ]
+}

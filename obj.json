@@ -1,0 +1,62 @@
+[
+    { functionName: 'setBaseURI', args: Result(1) [ '' ] },
+    {
+      functionName: 'setBatchTokenURI',
+      args: Result(2) [ [Result], [Result] ]
+    },
+    {
+      functionName: 'setTokenURI',
+      args: Result(2) [
+        2n,
+        'ipfs://QmeQYCdkw5DCtvRisypV3BXybwmjj5x6TLCxQg4kEUk2Uw/2.json'
+      ]
+    },
+    {
+      functionName: 'setTokenURI',
+      args: Result(2) [
+        1n,
+        'ipfs://QmeQYCdkw5DCtvRisypV3BXybwmjj5x6TLCxQg4kEUk2Uw/1.json'
+      ]
+    },
+    {
+      functionName: 'grantRole',
+      args: Result(2) [
+        '0x97667070c54ef182b0f5858b034beac1b6f3089aa2d3188bb1e8929f4fa9b929',
+        '0x1E779Fe3d77350127101f2f649F2C11d2B6c9DA7'
+      ]
+    },
+    {
+      functionName: 'setTokenURI',
+      args: Result(2) [
+        1n,
+        'QmeQYCdkw5DCtvRisypV3BXybwmjj5x6TLCxQg4kEUk2Uw/1.json'
+      ]
+    },
+    {
+      functionName: 'grantRole',
+      args: Result(2) [
+        '0x97667070c54ef182b0f5858b034beac1b6f3089aa2d3188bb1e8929f4fa9b929',
+        '0xB984f9F42d405A37F7f3903C73cbF7112DCc859b'
+      ]
+    },
+    {
+      functionName: 'grantRole',
+      args: Result(2) [
+        '0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6',
+        '0xB984f9F42d405A37F7f3903C73cbF7112DCc859b'
+      ]
+    },
+    {
+      functionName: 'setTokenURI',
+      args: Result(2) [
+        1n,
+        'QmeQYCdkw5DCtvRisypV3BXybwmjj5x6TLCxQg4kEUk2Uw/1.json'
+      ]
+    },
+    {
+      functionName: 'grantRole',
+      args: Result(2) [
+        '0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6',
+        '0xC93C95aBc93AbF17F38Be8a5FC926C467737CB03'
+      ]
+    }

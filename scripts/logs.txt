@@ -1,0 +1,350 @@
+54459152565958738968576n 354790549739797938176n heelp 0x7f2ce0b4991b5d345a3e8d1fd75318c1ddbe8d6d
+Liquidity added using addLiquidityWQIE
+20736324224660638007296n 135093028896097337344n heelp 0x978f4e56ae55c0602c607c3c7f80392217b3bf98
+error with 0x5Ed4F5122eD46901F420A28285f9B70e07a9FD3E
+Error: transaction execution reverted (action="sendTransaction", data=null, reason=null, invocation=null, revert=null, transaction={ "data": "", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, receipt={ "_type": "TransactionReceipt", "blockHash": "0x4c7b8373ae73f05f33b11f94ba161f0b2e21f7f8715a7a63be289c0ae87171c2", "blockNumber": 234715, "contractAddress": null, "cumulativeGasUsed": "183254", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "gasPrice": "2999991472", "gasUsed": "183254", "hash": "0x1fe7576674f0cf68479a04cfec85cd86e66fa4a79a2a81856d2e771b4559c2fd", "index": 0, "logs": [  ], "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "root": "0x0000000000000000000000000000000000000000000000000000000000000000", "status": 0, "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at assert (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:149:15)
+    at checkReceipt (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1051:35)
+    at JsonRpcProvider.txListener (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1097:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'sendTransaction',
+  data: null,
+  reason: null,
+  invocation: null,
+  revert: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    data: ''
+  },
+  receipt: TransactionReceipt {
+    provider: JsonRpcProvider {},
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    contractAddress: null,
+    hash: '0x1fe7576674f0cf68479a04cfec85cd86e66fa4a79a2a81856d2e771b4559c2fd',
+    index: 0,
+    blockHash: '0x4c7b8373ae73f05f33b11f94ba161f0b2e21f7f8715a7a63be289c0ae87171c2',
+    blockNumber: 234715,
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    gasUsed: 183254n,
+    cumulativeGasUsed: 183254n,
+    gasPrice: 2999991472n,
+    type: 0,
+    status: 0,
+    root: '0x0000000000000000000000000000000000000000000000000000000000000000'
+  },
+  shortMessage: 'transaction execution reverted'
+}
+Liquidity added using addLiquidityWQIE
+9787517347331624140800n 63763729265559552000n heelp 0x92ff9579428b52482428c0bc68a51db188170297
+Liquidity added using addLiquidityWQIE
+721329385398659055616n 4699317509193698304n heelp 0x1f3d6b473af08e4fc310c4806b35ff66ee227cca
+error with 0x5Ed4F5122eD46901F420A28285f9B70e07a9FD3E
+Error: transaction execution reverted (action="sendTransaction", data=null, reason=null, invocation=null, revert=null, transaction={ "data": "", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, receipt={ "_type": "TransactionReceipt", "blockHash": "0x95088d4ccfe4dc6c653af93aa2210c9f502e1946573345ee172db2933a6e1ace", "blockNumber": 234720, "contractAddress": null, "cumulativeGasUsed": "183242", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "gasPrice": "2999991470", "gasUsed": "183242", "hash": "0xabcd4e8c2de6f5781bf57c04565b7949b54dd70e24555d904b99b89aed6a20f0", "index": 0, "logs": [  ], "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "root": "0x0000000000000000000000000000000000000000000000000000000000000000", "status": 0, "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at assert (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:149:15)
+    at checkReceipt (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1051:35)
+    at JsonRpcProvider.txListener (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1097:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'sendTransaction',
+  data: null,
+  reason: null,
+  invocation: null,
+  revert: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    data: ''
+  },
+  receipt: TransactionReceipt {
+    provider: JsonRpcProvider {},
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    contractAddress: null,
+    hash: '0xabcd4e8c2de6f5781bf57c04565b7949b54dd70e24555d904b99b89aed6a20f0',
+    index: 0,
+    blockHash: '0x95088d4ccfe4dc6c653af93aa2210c9f502e1946573345ee172db2933a6e1ace',
+    blockNumber: 234720,
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    gasUsed: 183242n,
+    cumulativeGasUsed: 183242n,
+    gasPrice: 2999991470n,
+    type: 0,
+    status: 0,
+    root: '0x0000000000000000000000000000000000000000000000000000000000000000'
+  },
+  shortMessage: 'transaction execution reverted'
+}
+Liquidity added using addLiquidityWQIE
+476654960878804467712n 3105312287068191744n heelp 0x2e61822721b7f4d0960cec56c70a197db53b0781
+Liquidity added using addLiquidityWQIE
+71135110194298183680n 463431097666619520n heelp 0xf7bfc8c969e665d82dfc30507bd179b84137213e
+Liquidity added using addLiquidityWQIE
+68848836255526363136n 448536477582140672n heelp 0x2fecb3d1bb524313d318ca6371508c3bd94d2077
+error with 0x5Ed4F5122eD46901F420A28285f9B70e07a9FD3E
+Error: transaction execution reverted (action="sendTransaction", data=null, reason=null, invocation=null, revert=null, transaction={ "data": "", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, receipt={ "_type": "TransactionReceipt", "blockHash": "0x8ef8d08240c006244f7d3990a15daef7af52757a51962e0e1a0bb44c5cbd0536", "blockNumber": 234728, "contractAddress": null, "cumulativeGasUsed": "183242", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "gasPrice": "2999991467", "gasUsed": "183242", "hash": "0xe0357e37596a77c5142301893402ccd42d5388af37c34d8699311267c1cce647", "index": 0, "logs": [  ], "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "root": "0x0000000000000000000000000000000000000000000000000000000000000000", "status": 0, "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at assert (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:149:15)
+    at checkReceipt (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1051:35)
+    at JsonRpcProvider.txListener (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1097:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'sendTransaction',
+  data: null,
+  reason: null,
+  invocation: null,
+  revert: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    data: ''
+  },
+  receipt: TransactionReceipt {
+    provider: JsonRpcProvider {},
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    contractAddress: null,
+    hash: '0xe0357e37596a77c5142301893402ccd42d5388af37c34d8699311267c1cce647',
+    index: 0,
+    blockHash: '0x8ef8d08240c006244f7d3990a15daef7af52757a51962e0e1a0bb44c5cbd0536',
+    blockNumber: 234728,
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    gasUsed: 183242n,
+    cumulativeGasUsed: 183242n,
+    gasPrice: 2999991467n,
+    type: 0,
+    status: 0,
+    root: '0x0000000000000000000000000000000000000000000000000000000000000000'
+  },
+  shortMessage: 'transaction execution reverted'
+}
+Liquidity added using addLiquidityWQIE
+68688194972119801856n 447489931564339712n heelp 0x8d0473d4e8e8d847e70ac83afbf62b037963548e
+Liquidity added using addLiquidityWQIE
+10030357229551174n 65345782809398n heelp 0x0bfd580a07a6f0f8ef8f9010d827d136c1ec6e43
+Liquidity added using addLiquidityWQIE
+119860017640n 780864180n heelp 0x49141cdbaa6374c1404cf4166787a56e9213606f
+error with 0x5Ed4F5122eD46901F420A28285f9B70e07a9FD3E
+Error: transaction execution reverted (action="sendTransaction", data=null, reason=null, invocation=null, revert=null, transaction={ "data": "", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, receipt={ "_type": "TransactionReceipt", "blockHash": "0xf30217bae6c483a003a9665960c5685d7026f7cc1d67786887caf1462eebd70c", "blockNumber": 234735, "contractAddress": null, "cumulativeGasUsed": "175562", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "gasPrice": "2999991464", "gasUsed": "175562", "hash": "0x989da5c14f6cac0502aaab7567e6af6a59f411bdd45335935c52aa399f5e57a8", "index": 0, "logs": [  ], "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "root": "0x0000000000000000000000000000000000000000000000000000000000000000", "status": 0, "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at assert (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:149:15)
+    at checkReceipt (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1051:35)
+    at JsonRpcProvider.txListener (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider.js:1097:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'sendTransaction',
+  data: null,
+  reason: null,
+  invocation: null,
+  revert: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    data: ''
+  },
+  receipt: TransactionReceipt {
+    provider: JsonRpcProvider {},
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1',
+    contractAddress: null,
+    hash: '0x989da5c14f6cac0502aaab7567e6af6a59f411bdd45335935c52aa399f5e57a8',
+    index: 0,
+    blockHash: '0xf30217bae6c483a003a9665960c5685d7026f7cc1d67786887caf1462eebd70c',
+    blockNumber: 234735,
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    gasUsed: 175562n,
+    cumulativeGasUsed: 175562n,
+    gasPrice: 2999991464n,
+    type: 0,
+    status: 0,
+    root: '0x0000000000000000000000000000000000000000000000000000000000000000'
+  },
+  shortMessage: 'transaction execution reverted'
+}
+Liquidity added using addLiquidityWQIE
+437659432542764204032n 4583735049109912576n heelp 0x86dc994e600fd55b49208de935e92a73cb896696
+error with 0x4315e4a11cA1d1562693DBBC5b83253c060E6Fe6
+Error: missing revert data (action="estimateGas", data=null, reason=null, transaction={ "data": "0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe6000000000000000000000000000000000000000000000017b9bea7141e7f00000000000000000000000000000000000000000000000000025f5fdd82030cb333000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086dc994e600fd55b49208de935e92a73cb8966960000000000000000000000000000000000000000000000000000000065b9b167", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:104:37)
+    at Function.getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:201:16)
+    at JsonRpcProvider.getRpcError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:668:43)
+    at /home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:302:45
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'estimateGas',
+  data: null,
+  reason: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    data: '0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe6000000000000000000000000000000000000000000000017b9bea7141e7f00000000000000000000000000000000000000000000000000025f5fdd82030cb333000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086dc994e600fd55b49208de935e92a73cb8966960000000000000000000000000000000000000000000000000000000065b9b167',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1'
+  },
+  invocation: null,
+  revert: null,
+  shortMessage: 'missing revert data',
+  info: {
+    error: {
+      code: -32600,
+      message: 'unable to apply transaction even for the highest gas limit 5242880: execution was reverted: TransferHelper::transferFrom: transferFrom failed'
+    },
+    payload: {
+      method: 'eth_estimateGas',
+      params: [Array],
+      id: 244,
+      jsonrpc: '2.0'
+    }
+  }
+}
+Liquidity added using addLiquidityWQIE
+140561663660149604352n 1472143352507938560n heelp 0x3187eca49599e4be074a56acb9396aecb9d3ab1e
+error with 0x4315e4a11cA1d1562693DBBC5b83253c060E6Fe6
+Error: missing revert data (action="estimateGas", data=null, reason=null, transaction={ "data": "0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe60000000000000000000000000000000000000000000000079eaf585f0d268000000000000000000000000000000000000000000000000000c31188d64e1d733300000000000000000000000000000000000000000000000000000000000000000000000000000000000000003187eca49599e4be074a56acb9396aecb9d3ab1e0000000000000000000000000000000000000000000000000000000065b9b168", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:104:37)
+    at Function.getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:201:16)
+    at JsonRpcProvider.getRpcError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:668:43)
+    at /home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:302:45
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'estimateGas',
+  data: null,
+  reason: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    data: '0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe60000000000000000000000000000000000000000000000079eaf585f0d268000000000000000000000000000000000000000000000000000c31188d64e1d733300000000000000000000000000000000000000000000000000000000000000000000000000000000000000003187eca49599e4be074a56acb9396aecb9d3ab1e0000000000000000000000000000000000000000000000000000000065b9b168',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1'
+  },
+  invocation: null,
+  revert: null,
+  shortMessage: 'missing revert data',
+  info: {
+    error: {
+      code: -32600,
+      message: 'unable to apply transaction even for the highest gas limit 5242880: execution was reverted: TransferHelper::transferFrom: transferFrom failed'
+    },
+    payload: {
+      method: 'eth_estimateGas',
+      params: [Array],
+      id: 247,
+      jsonrpc: '2.0'
+    }
+  }
+}
+Liquidity added using addLiquidityWQIE
+39401893109126832128n 412667533283290112n heelp 0x10d5e55569471ae227c1ead781599b23ac605064
+error with 0x4315e4a11cA1d1562693DBBC5b83253c060E6Fe6
+Error: missing revert data (action="estimateGas", data=null, reason=null, transaction={ "data": "0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe600000000000000000000000000000000000000000000000222cfa505c76aa00000000000000000000000000000000000000000000000000036ae5d4d60bddccc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010d5e55569471ae227c1ead781599b23ac6050640000000000000000000000000000000000000000000000000000000065b9b169", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:104:37)
+    at Function.getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:201:16)
+    at JsonRpcProvider.getRpcError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:668:43)
+    at /home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:302:45
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'estimateGas',
+  data: null,
+  reason: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    data: '0xf305d7190000000000000000000000004315e4a11ca1d1562693dbbc5b83253c060e6fe600000000000000000000000000000000000000000000000222cfa505c76aa00000000000000000000000000000000000000000000000000036ae5d4d60bddccc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010d5e55569471ae227c1ead781599b23ac6050640000000000000000000000000000000000000000000000000000000065b9b169',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1'
+  },
+  invocation: null,
+  revert: null,
+  shortMessage: 'missing revert data',
+  info: {
+    error: {
+      code: -32600,
+      message: 'unable to apply transaction even for the highest gas limit 5242880: execution was reverted: TransferHelper::transferFrom: transferFrom failed'
+    },
+    payload: {
+      method: 'eth_estimateGas',
+      params: [Array],
+      id: 250,
+      jsonrpc: '2.0'
+    }
+  }
+}
+Liquidity added using addLiquidityWQIE
+100851n 119790634821668336n heelp 0x92287db09b1eaf3f55335d3b06474ff20fb7ff9e
+error with 0xb208DAAd004C60369Ca6134A5BFA8134c8205E17
+Error: missing revert data (action="estimateGas", data=null, reason=null, transaction={ "data": "0xf305d719000000000000000000000000b208daad004c60369ca6134a5bfa8134c8205e1700000000000000000000000000000000000000000000000000000000000189f30000000000000000000000000000000000000000000000000000000000002765000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092287db09b1eaf3f55335d3b06474ff20fb7ff9e0000000000000000000000000000000000000000000000000000000065b9b16a", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:104:37)
+    at Function.getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:201:16)
+    at JsonRpcProvider.getRpcError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:668:43)
+    at /home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:302:45
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'estimateGas',
+  data: null,
+  reason: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    data: '0xf305d719000000000000000000000000b208daad004c60369ca6134a5bfa8134c8205e1700000000000000000000000000000000000000000000000000000000000189f30000000000000000000000000000000000000000000000000000000000002765000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092287db09b1eaf3f55335d3b06474ff20fb7ff9e0000000000000000000000000000000000000000000000000000000065b9b16a',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1'
+  },
+  invocation: null,
+  revert: null,
+  shortMessage: 'missing revert data',
+  info: {
+    error: {
+      code: -32600,
+      message: 'unable to apply transaction even for the highest gas limit 5242880: execution was reverted: TransferHelper::transferFrom: transferFrom failed'
+    },
+    payload: {
+      method: 'eth_estimateGas',
+      params: [Array],
+      id: 253,
+      jsonrpc: '2.0'
+    }
+  }
+}
+Liquidity added using addLiquidityWQIE
+0n 2721718635n heelp 0x3187eca49599e4be074a56acb9396aecb9d3ab1e
+error with 0xb208DAAd004C60369Ca6134A5BFA8134c8205E17
+Error: missing revert data (action="estimateGas", data=null, reason=null, transaction={ "data": "0xf305d719000000000000000000000000b208daad004c60369ca6134a5bfa8134c8205e170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003187eca49599e4be074a56acb9396aecb9d3ab1e0000000000000000000000000000000000000000000000000000000065b9b16b", "from": "0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1", "to": "0x69f64E231532BE3756CC39A1240b31cA0Db41d1d" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.9.1)
+    at makeError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/utils/errors.js:129:21)
+    at getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:104:37)
+    at Function.getBuiltinCallException (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/abi/abi-coder.js:201:16)
+    at JsonRpcProvider.getRpcError (/home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:668:43)
+    at /home/administrator/hardhart/node_modules/ethers/lib.commonjs/providers/provider-jsonrpc.js:302:45
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'estimateGas',
+  data: null,
+  reason: null,
+  transaction: {
+    to: '0x69f64E231532BE3756CC39A1240b31cA0Db41d1d',
+    data: '0xf305d719000000000000000000000000b208daad004c60369ca6134a5bfa8134c8205e170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003187eca49599e4be074a56acb9396aecb9d3ab1e0000000000000000000000000000000000000000000000000000000065b9b16b',
+    from: '0x3b3423Af1a3c6a9A3ee46a9ba7F60D235Cb7f9E1'
+  },
+  invocation: null,
+  revert: null,
+  shortMessage: 'missing revert data',
+  info: {
+    error: {
+      code: -32600,
+      message: 'unable to apply transaction even for the highest gas limit 5242880: execution was reverted: ds-math-sub-underflow'
+    },
+    payload: {
+      method: 'eth_estimateGas',
+      params: [Array],
+      id: 256,
+      jsonrpc: '2.0'
+    }
+  }
+}
+Liquidity added using addLiquidityWQIE
+4828808358613n 145170840255362809856n heelp 0x887c8310922c0aed5cc09e1ce43c4779c7403300
+Liquidity added using addLiquidityWQIE
+261146556n 7850977333272665n heelp 0x3187eca49599e4be074a56acb9396aecb9d3ab1e
+Liquidity added using addLiquidityWQIE
+884176727590479724544n 332994335434715520n heelp 0xe8c852fb61a6350caa4a5301ecaea4f5df2eade9
+Liquidity added using addLiquidityWQIE
+41593032068363616n 15664565284435n heelp 0x3187eca49599e4be074a56acb9396aecb9d3ab1e
