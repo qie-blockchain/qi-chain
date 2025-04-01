@@ -1,8 +1,10 @@
 const { ethers } = require("hardhat");
 const axios = require("axios");
 const fs = require("fs");
-const transactionJson = require("../filterTransaction.json");
-let hashes = require('../filterTransaction.json')
+const transactionJson = require("../swapWithoutReverted21Feb.json");
+let hashes = require('../swapWithoutReverted21Feb.json');
+let doodleItems = require('../doodleItemsData.json');
+let doodleShop = require('../doodleShopData.json');
 
 const doodleAbi = [
   {
@@ -987,6 +989,7 @@ const doodleAbi = [
     type: "function",
   },
 ];
+
 const doodleShopAbi = [
   {
     inputs: [
@@ -1535,6 +1538,7 @@ const doodleShopAbi = [
     type: "function",
   },
 ];
+
 const routerAbi = [
   {
     inputs: [
@@ -2690,6 +2694,7 @@ const routerAbi = [
     type: "receive",
   },
 ];
+
 const factoryAbi = [
   {
     inputs: [
@@ -3038,6 +3043,7 @@ const factoryAbi = [
     type: "function",
   },
 ];
+
 const ERC20ABI = [
   {
     inputs: [],
@@ -3398,25 +3404,20 @@ const ERC20ABI = [
     type: "function",
   },
 ];
+
 const rpcUrls = {
   qiMainnet: "https://rpc-main1.qiblockchain.online",
   qiBeta: "http://146.190.15.105:10002/",
 };
-function writeJsonToFile(jsonObject, filePath) {
-  try {
-    const jsonString = JSON.stringify(jsonObject, null, 2); // The third argument (2) specifies the number of spaces to use for indentation.
-    fs.writeFileSync(filePath, jsonString);
-    console.log(`JSON data has been written to ${filePath}`);
-  } catch (error) {
-    console.error("Error writing JSON to file:", error);
-  }
-}
+
 const mainnetDoodleItemsAddress = "0xdc45db5C686dC035FbB434bc9bbC8F0c10399B1C";
 const mainnetDoodleShopAddress = "0xC93C95aBc93AbF17F38Be8a5FC926C467737CB03";
-const testnetDoodleQiAddress = "0x55c5390C6D2a5DE36Fb44FD5CEF2E7AF81c52Ca4";
-const testnetRouterAddress = "0x688347824d806C3435cE64eE459D8d2217Fd26C3";
-const testnetFactoryAddress = "0xb1f423511AD906735f9122c32aa1e2956254Fa1C";
+const testnetDoodleQiAddress = "0xf509BE1111aa234078E911940b7BC57E446415B9";
+const testnetRouterAddress = "0x1a556530bb46c8eC4cdf8c750925952CF89d8E90";
+const testnetFactoryAddress = "0xadfB415e03dB95f92041096A1e4aa6B80f42178c";
 const mainnetRouterAddress = "0x4fd15501aDe13Dc668E8d0247885f04bfD00B458";
+const testnetWQIEAddress = "0x3aF492C875829B69a0803f4688C54fb867C193DF";
+
 async function decodeTransactionInput() {
   try {
     const provider = new ethers.getDefaultProvider(rpcUrls.qiMainnet); // Replace with your custom chain RPC URL
@@ -3542,6 +3543,7 @@ async function decodeTransactionInputForShop() {
     throw error;
   }
 }
+
 async function decodeTransactionInputForRouter() {
   try {
     const provider = new ethers.getDefaultProvider(rpcUrls.qiMainnet); // Replace with your custom chain RPC URL
@@ -3610,6 +3612,7 @@ async function decodeTransactionInputForRouter() {
 //   decodeTransactionInputForShop()
 
 // decodeTransactionInput()
+
 async function getContractTransactions(contractAddress) {
   try {
     const provider = new ethers.getDefaultProvider(rpcUrls.qiMainnet); // Replace with your custom chain RPC URL
@@ -3704,12 +3707,12 @@ async function processTransactions() {
     const wallet = new ethers.Wallet(
       "1d35e8c84b9d5861650e061cdabdd4146c2f26ff805db1217a870ce6f1ac4155"
     );
-    let transactions = await decodeTransactionInput();
+    let transactions = doodleItems;
     const customWallet = wallet.connect(provider);
     const signer =
       customWallet; /* Your Ethereum account signer, typically obtained from a wallet */
     const contract = new ethers.Contract(
-      "0x7E379610D2622DfcaC075E547869e94B4d11E0Ea",
+      "0x78f83A3eaE370E269157D6F70b401Efcb4AB4239",
       doodleAbi,
       provider
     );
@@ -3770,9 +3773,8 @@ async function processTransactions() {
   }
 }
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 
 async function processTransactionsForShop() {
   try {
@@ -3782,12 +3784,12 @@ async function processTransactionsForShop() {
     const wallet = new ethers.Wallet(
       "1d35e8c84b9d5861650e061cdabdd4146c2f26ff805db1217a870ce6f1ac4155"
     );
-    let transactions = await decodeTransactionInputForShop();
+    let transactions = doodleShop;
     const customWallet = wallet.connect(provider);
     const signer =
       customWallet; /* Your Ethereum account signer, typically obtained from a wallet */
     const contract = new ethers.Contract(
-      "0x8F67BdbCC239132D4C0500C0f3b78EE528d1b148",
+      "0x0032A64f006BE73FC31e713C8b68A84324351585",
       doodleShopAbi,
       provider
     ); //0x336ea50B9b6D21e69a0C74B2307dD92c6a8FE65b
@@ -3903,18 +3905,16 @@ async function processTransactionsForRouter(contract, transactions) {
       "http://146.190.15.105:10002/"
     ); // Replace with your custom chain RPC URL
     // const providerMainnet = new ethers.JsonRpcProvider(
-	// 	"https://rpc-main1.qiblockchain.online"
-	//   ); //
-	const wallet = new ethers.Wallet(
+    // 	"https://rpc-main1.qiblockchain.online"
+    //   ); //
+    const wallet = new ethers.Wallet(
       "1d35e8c84b9d5861650e061cdabdd4146c2f26ff805db1217a870ce6f1ac4155"
     );
-	
+
     let transactions = transactionJson;
-	let proceed = false
-	
-     
-	
-	transactions = transactions.reverse()
+    let proceed = false
+
+    transactions = transactions.reverse()
     const customWallet = wallet.connect(provider);
     const signer =
       customWallet; /* Your Ethereum account signer, typically obtained from a wallet */
@@ -3932,36 +3932,36 @@ async function processTransactionsForRouter(contract, transactions) {
     const contractWithSigner = contract.connect(signer);
     for (const transaction of transactions) {
       const { functionName, args, from, value, number } = transaction;
-// 	  for(let j in transactions){
-// 		// console.log(number.number, transactions[j].number);
-// 		if(number === transactions[j].number){
-// 			// console.log("here", transactions[j].transactionHash);
-			
-// 			const receipt = await providerMainnet.getTransactionReceipt(transactions[j].transactionHash);
-// 			console.log(receipt);
-// 			if (receipt && receipt.status === 1) {
-// 				// If the status is 1, the transaction was successful
-// 				console.log("Status of number", number, "is", true);
-// 				// obj[number] = true
-// 				proceed = true
-// 				break
-// 			} else {
-// 				// If the status is 0, the transaction was reverted or failed
-// 				console.log("Status of number", number, "is", false);
-// 				// obj[number.number] = false
+      // 	  for(let j in transactions){
+      // 		// console.log(number.number, transactions[j].number);
+      // 		if(number === transactions[j].number){
+      // 			// console.log("here", transactions[j].transactionHash);
 
-// 				break
-// 			}
-// 		}
-	
-// }	
-	 
-	  console.log(`Current Number of Transaction is ${number}`);
-		// if(!proceed){
-		// 	console.log(`this transaction is not valid coninuinug is ${number}`);
+      // 			const receipt = await providerMainnet.getTransactionReceipt(transactions[j].transactionHash);
+      // 			console.log(receipt);
+      // 			if (receipt && receipt.status === 1) {
+      // 				// If the status is 1, the transaction was successful
+      // 				console.log("Status of number", number, "is", true);
+      // 				// obj[number] = true
+      // 				proceed = true
+      // 				break
+      // 			} else {
+      // 				// If the status is 0, the transaction was reverted or failed
+      // 				console.log("Status of number", number, "is", false);
+      // 				// obj[number.number] = false
 
-		// 	continue
-		// }
+      // 				break
+      // 			}
+      // 		}
+
+      // }	
+
+      console.log(`Current Number of Transaction is ${number}`);
+      // if(!proceed){
+      // 	console.log(`this transaction is not valid coninuinug is ${number}`);
+
+      // 	continue
+      // }
       // Depending on the function, you may need to handle different argument structures
       // Adjust the following switch statement based on your contract's function signatures
       let deadline = Math.floor(Date.now() / 1000) + 60 * 100;
@@ -4024,20 +4024,19 @@ async function processTransactionsForRouter(contract, transactions) {
           break;
           c;
         case "swapExactETHForTokens":
-		console.log("in the swapTokensForExactETH function");
-			let amountsOut = await contractWithSigner["getAmountsOut"](
-			  value,
-			  args[1]
-			);
-			console.log("amount in is", amountsOut);  
-		console.log("in the swapExactETHForTokens function");
+          console.log("in the swapTokensForExactETH function");
+          let amountsOut = await contractWithSigner["getAmountsOut"](
+            value,
+            args[1]
+          );
+          console.log("amount in is", amountsOut);
+          console.log("in the swapExactETHForTokens function");
           let swapExactETHForTokens = await contractWithSigner[functionName](
             amountsOut[1],
             args[1],
             signer.address,
             deadline,
-            { value }
-          );
+            { value })
           await swapExactETHForTokens.wait();
           console.log("done swapExactETHForTokens");
           break;
@@ -4071,7 +4070,7 @@ async function processTransactionsForRouter(contract, transactions) {
         case "removeLiquidityETHWithPermit":
           console.log("in the removeLiquidityETHWithPermit function");
           console.log(args[0], args[1]);
-          let tokenB = "0xA6b84c204BF15fAE3633a0bEBA1F3586382f3842";
+          let tokenB = testnetWQIEAddress;
           const pairAddress = await factoryContract.getPair(args[0], tokenB);
 
           console.log("the Pair Address is", pairAddress);
@@ -4080,7 +4079,7 @@ async function processTransactionsForRouter(contract, transactions) {
           console.log("Starting approval");
           let approvalTx = await pairContract.approve(
             testnetRouterAddress,
-            "99999999999999999999999999999999999999999999",{gasLimit:5000000}
+            "99999999999999999999999999999999999999999999"
           );
           await approvalTx.wait();
           console.log("Done Approving");
@@ -4099,18 +4098,18 @@ async function processTransactionsForRouter(contract, transactions) {
           console.log("Done removeLiquiiidtyETHwithPermit");
           break;
         case "removeLiquidityWithPermit":
-        console.log("in remove removeLiquidityWithPermit function");  
-		let actualFunctionName = "removeLiquidity";
-		  const pairAddresss = await factoryContract.getPair(args[0], args[1])
-			
-		  console.log("the Pair Address is",pairAddresss);
-		  let pairContracst = new ethers.Contract(pairAddresss, ERC20ABI, signer)
-		  // let pairContractWithSigner = pairContract.connect(signer)
-		  console.log("Starting approval");
-		  let approvalTxs = await pairContracst.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
-		  await approvalTxs.wait()
-		  console.log("Done Approving"); 
-		  console.log("in the removeLiquidityWithPermit function");
+          console.log("in remove removeLiquidityWithPermit function");
+          let actualFunctionName = "removeLiquidity";
+          const pairAddresss = await factoryContract.getPair(args[0], args[1])
+
+          console.log("the Pair Address is", pairAddresss);
+          let pairContracst = new ethers.Contract(pairAddresss, ERC20ABI, signer)
+          // let pairContractWithSigner = pairContract.connect(signer)
+          console.log("Starting approval");
+          let approvalTxs = await pairContracst.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
+          await approvalTxs.wait()
+          console.log("Done Approving");
+          console.log("in the removeLiquidityWithPermit function");
           let removeLiquidityWithPermit = await contractWithSigner[
             actualFunctionName
           ](args[0], args[1], args[2], args[3], args[4], signer.address, deadline, {
@@ -4122,16 +4121,16 @@ async function processTransactionsForRouter(contract, transactions) {
         case "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens":
           let actualName = "removeLiquidityETH";
           console.log("in the removeLiquidityWithPermit function");
-		  const pairAddressss = await factoryContract.getPair(args[0], "0xA6b84c204BF15fAE3633a0bEBA1F3586382f3842")
-			
-		  console.log("the Pair Address is",pairAddressss);
-		  let pairContracsst = new ethers.Contract(pairAddressss, ERC20ABI, signer)
-		  // let pairContractWithSigner = pairContract.connect(signer)
-		  console.log("Starting approval");
-		  let approvalTxss = await pairContracsst.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
-		  await approvalTxss.wait()
-		  console.log("Done Approving");  
-		  let txn = await contractWithSigner[actualName](
+          const pairAddressss = await factoryContract.getPair(args[0], testnetWQIEAddress)
+
+          console.log("the Pair Address is", pairAddressss);
+          let pairContracsst = new ethers.Contract(pairAddressss, ERC20ABI, signer)
+          // let pairContractWithSigner = pairContract.connect(signer)
+          console.log("Starting approval");
+          let approvalTxss = await pairContracsst.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
+          await approvalTxss.wait()
+          console.log("Done Approving");
+          let txn = await contractWithSigner[actualName](
             args[0],
             args[1],
             args[2],
@@ -4150,18 +4149,18 @@ async function processTransactionsForRouter(contract, transactions) {
             "In the removeLiquidityETHSupportingFeeOnTransferTokens function "
           );
           let name = "removeLiquidityETH";
-          
-		  const pairAddresssssss = await factoryContract.getPair(args[0], "0xA6b84c204BF15fAE3633a0bEBA1F3586382f3842")
-			
-		  console.log("the Pair Address is",pairAddresssssss);
-		  let pairContracsts = new ethers.Contract(pairAddresssssss, ERC20ABI, signer)
-		  // let pairContractWithSigner = pairContract.connect(signer)
-		  console.log("Starting approval");
-		  let approvalTxssss = await pairContracsts.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
-		  await approvalTxssss.wait()
-		  console.log("Done Approving"); 
-		  console.log("in the removeLiquidityWithPermit function");
-		  let removeLiquidityETHSupportingFeeOnTransferTokens =
+
+          const pairAddresssssss = await factoryContract.getPair(args[0], testnetWQIEAddress)
+
+          console.log("the Pair Address is", pairAddresssssss);
+          let pairContracsts = new ethers.Contract(pairAddresssssss, ERC20ABI, signer)
+          // let pairContractWithSigner = pairContract.connect(signer)
+          console.log("Starting approval");
+          let approvalTxssss = await pairContracsts.approve(testnetRouterAddress, "99999999999999999999999999999999999999999999999999999")
+          await approvalTxssss.wait()
+          console.log("Done Approving");
+          console.log("in the removeLiquidityWithPermit function");
+          let removeLiquidityETHSupportingFeeOnTransferTokens =
             await contractWithSigner[name](
               args[0],
               args[1],
@@ -4200,6 +4199,7 @@ async function processTransactionsForRouter(contract, transactions) {
             "in the swapExactETHForTokensSupportingFeeOnTransferTokens transaction"
           );
           let someName = "swapExactETHForTokens";
+          console.log(args[0], args[1], args[2], args[3], args[4]);
           let swapping = await contractWithSigner[someName](
             args[0],
             args[1],
@@ -4212,6 +4212,7 @@ async function processTransactionsForRouter(contract, transactions) {
             "done swapExactETHForTokensSupportingFeeOnTransferTokens transaction"
           );
           break;
+
         // Add more cases for other functions as needed
         case "addLiquidity":
           console.log("in the adding liquiidty function");
@@ -4243,7 +4244,7 @@ async function processTransactionsForRouter(contract, transactions) {
         default:
           console.error(`Unsupported function: ${functionName}`);
       }
-	  await delay(10000);
+      await delay(10000);
 
     }
   } catch (error) {
@@ -4251,16 +4252,7 @@ async function processTransactionsForRouter(contract, transactions) {
     throw error;
   }
 }
-processTransactionsForRouter();
-//   processTransactionsForShop()
-//   processTransactions()
-// Example usage
-// const transactionHash = '0x123abc...'; // Replace with the actual transaction hash
-// decodeTransactionInput(transactionHash)
-//   .then(decodedData => {
-//     console.log('Decoded Input Data:', decodedData);
-//     // Perform further processing or validation as needed
-//   })
-//   .catch(error => {
-//     // Handle errors
-//   });
+
+// processTransactionsForRouter();
+processTransactionsForShop();
+// processTransactions()

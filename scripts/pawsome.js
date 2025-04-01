@@ -647,6 +647,7 @@ const abi = [
 		"type": "function"
 	}
 ]
+
 function writeJsonToFile(jsonObject, filePath) {
     try {
       const jsonString = JSON.stringify(jsonObject, null, 2); // The third argument (2) specifies the number of spaces to use for indentation.
@@ -680,12 +681,12 @@ async function getaValues(){
     }
     console.log("the total sum of the NFTs is", sum);
     console.log("done, writing the file");
-    writeJsonToFile(holderInfo, "pawsomeHolderInfo")
+    writeJsonToFile(holderInfo, "HovrHooligans21Feb.json")
 }
 
 // const result = newFunction()
   
-// getaValues()
+getaValues()
 
 function newFunction() {
     const inputJson = {
@@ -706,4 +707,4 @@ function newFunction() {
     // return result
     writeJsonToFile(result, "modifiedPawsome")
 }
-newFunction()
+// newFunction()

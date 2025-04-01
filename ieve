@@ -1,0 +1,927 @@
+[
+    {
+    "number": 1666,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xBaC3AD4A22BE26b5306bdB08cF9E3E4E7ab3c126",
+      "4537869168997372820230393",
+      "4501566215645393837668549",
+      "378734354887244202",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1679901945"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "381788664200851011"
+  },
+  {
+    "number": 1644,
+    "functionName": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
+    "args": [
+      "0xBaC3AD4A22BE26b5306bdB08cF9E3E4E7ab3c126",
+      "5275219616709372634429",
+      "18136857563360253353739822",
+      "1526414149370320606",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680076723",
+      false,
+      28,
+      "0x848455bea2113b4a12cbd49429c09cd249bd1d772d7246b0f891159d671aae27",
+      "0x04ca6a137ea1c35bdf3c35a8fcb71023cc8b3a5b68e6a29f6ee13ac829ae7a4a"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },
+  {
+    "number": 1642,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xBaC3AD4A22BE26b5306bdB08cF9E3E4E7ab3c126",
+      "18235221553977394707307458",
+      "18089339781545575549648998",
+      "1509160486462106206",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680077540"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1521331135546478031"
+  },
+  {
+    "number": 1560,
+    "functionName": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
+    "args": [
+      "0xBaC3AD4A22BE26b5306bdB08cF9E3E4E7ab3c126",
+      "5208677987132854723312",
+      "18065360735748955235679149",
+      "1509160201659373024",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681565634",
+      false,
+      28,
+      "0xc26a4233e4cab21765c40646eec49693ad263984f2f77105679810bfef12d445",
+      "0x50bcf28d69b8805edb820e52784b41f5d39d027a5b718714b37c715cf79d0b94"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },
+  {
+    "number": 796,
+    "functionName": "removeLiquidityETHWithPermit",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "15803138714227391918346",
+      "5000842121543856535426453",
+      "49620805159849941991",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1691722560",
+      false,
+      28,
+      "0xde6fbb4d6d1722056db52127b61b9bb458857ff605c4787472c49d0491c72d14",
+      "0x11d9874c6f6cffa1dc67319a315c372e1efb344b14d317f9c6af6caae7b82ff1"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },  {
+    "number": 797,
+    "functionName": "removeLiquidityWithPermit",
+    "args": [
+      "0x079Acabcc1fcd9E7211a0Bc294aee02EEfCe77e3",
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "28704108316710587784329",
+      "100717370538159227484",
+      "8050207703303150079580620",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1691722459",
+      false,
+      28,
+      "0x03f13a8b88a9452be7a06eb63d61dadb741e85f7e113acfcf49d5fc1181f80f9",
+      "0x71d4c0e48773bf67b9289e8c58482cf43db7a5de1f79beba6032fcb35c0de45e"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  }, {
+    "number": 798,
+    "functionName": "removeLiquidityETHWithPermit",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "15803138714227391918345",
+      "5000879760157597066050130",
+      "49621178628612504952",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1691722199",
+      false,
+      28,
+      "0xfb5776ecc0c9e6cb6219661b86c46106d340f75294bc82326ae5fcfd14785456",
+      "0x5a1c16b2460f01556452d0d22f2331d4c263deae88f9e8dc21a1709b5f82d688"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },  {
+    "number": 1550,
+    "functionName": "addLiquidity",
+    "args": [
+      "0x079Acabcc1fcd9E7211a0Bc294aee02EEfCe77e3",
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "3223285330061542944",
+      "257632980838934771011860",
+      "3197499047421050600",
+      "255571916992223292843765",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681627705"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },  {
+    "number": 1551,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "255713259079755674531291",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681627575"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2500000000000000000"
+  },  {
+    "number": 1554,
+    "functionName": "addLiquidity",
+    "args": [
+      "0x079Acabcc1fcd9E7211a0Bc294aee02EEfCe77e3",
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "664529547979698877",
+      "53114977661096758481981",
+      "659213311595861285",
+      "52690057839807984414125",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681568056"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },  {
+    "number": 1556,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "52719721136536761462443",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681567183"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "500000000000000000"
+  },  {
+    "number": 1557,
+    "functionName": "addLiquidity",
+    "args": [
+      "0x079Acabcc1fcd9E7211a0Bc294aee02EEfCe77e3",
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "97641792519296689115",
+      "7804380774668466534960116",
+      "97641792519296689115",
+      "7804380774668466534960116",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681566212"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  },  {
+    "number": 1561,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "263897847011825101781506",
+      "261786664235730500967253",
+      "2444394015040000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681534849"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2464106870000000001"
+  },{
+    "number": 1564,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "378334974713990651811804",
+      "375308294916278726597309",
+      "3504385345856000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681444253"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "3532646518000000000"
+  },  {
+    "number": 1566,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1293667415959478232898310",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681367804"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "10764532356126108418"
+  },{
+    "number": 1567,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1922000408461585312020718",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681367725"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "12000000000000000000"
+  }, {
+    "number": 1568,
+    "functionName": "removeLiquidityETHWithPermit",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "9884395840600145764086",
+      "4295593664325787531403418",
+      "22583148873720126584",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681367411",
+      false,
+      28,
+      "0x9998a6e7e3b5fcc868a8d4ebd3b9fe35dfd54e9105391748a78eaf74b1fd0833",
+      "0x130867835598cfffb97d6cde939e399cc116a681bbe04f1c21bc9b03be55cea6"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "0"
+  }, {
+    "number": 1572,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "869899312723811146043737",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681359346"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "4398375459118650759"
+  },  {
+    "number": 1575,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "431072859662431724104098",
+      "427624276785132270311265",
+      "2036546653546298447",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681298244"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2052970416881349241"
+  },{
+    "number": 1576,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "427861033707065774057213",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681280605"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2010235374907307870"
+  }, {
+    "number": 1577,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "976729649912760597745512",
+      "968915812713458512963547",
+      "4398126943419950592",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681280290"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "4433595709092692130"
+  },  {
+    "number": 1582,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "969437683888339969594981",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681181556"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "4207617260769742533"
+  },  {
+    "number": 1584,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1270807298852758624947898",
+      "1260640840461936555948314",
+      "5123819335556415407",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681102819"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "5165140459230257467"
+  },  {
+    "number": 1587,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1261309618601369033503990",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681014849"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "4817948800041433056"
+  },  {
+    "number": 1588,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "787103564689666267144038",
+      "780806736172148937006885",
+      "2745286190198898408",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1681014796"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2767425594958566944"
+  }, {
+    "number": 1589,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "781231371021684092646594",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680928005"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2655368891279451283"
+  }, {
+    "number": 1590,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "880550412796975828034020",
+      "873506009494600021409747",
+      "2810959684010784327",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680927953"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2833628713720548717"
+  },
+ 
+ 
+  {
+    "number": 1591,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "280541584472218661074737",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680830592"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "897606857000000001"
+  },  {
+    "number": 1592,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "489862708934390521792435",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680830519"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1500000000000000000"
+  },
+  {
+    "number": 1593,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "345849616735646628757121",
+      "343082819801761455727064",
+      "1011238014720000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680792209"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1019393160000000000"
+  },  {
+    "number": 1595,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "359689697064530468876944",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680781200"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1049859541000000001"
+  },
+  {
+    "number": 1596,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "403457827404182061152561",
+      "400230164784948604663340",
+      "1132880177536000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680763024"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1142016308000000000"
+  },  {
+    "number": 1597,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "487620211696634163023704",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680747343"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1357033045007627760"
+  },
+  {
+    "number": 1598,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "759058238651229611329848",
+      "752985772742019774439209",
+      "2017708011192433262",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680747244"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2033979849992372240"
+  },  {
+    "number": 1601,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "467117620188600988497757",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680696204"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1231554830000000000"
+  },{
+    "number": 1603,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "286285566519024143286053",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680681041"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "723274964730912043"
+  },
+  {
+    "number": 1604,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "119764317746588301055899",
+      "118806203204615594647451",
+      "292317312586935254",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680681000"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "294674710269087958"
+  },
+  {
+    "number": 1605,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1094938311393737176353892",
+      "1086178804902587278943060",
+      "2672494033760000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680675065"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2694046405000000001"
+  },{
+    "number": 1610,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "520778845804867729855696",
+      "516612615038428788016850",
+      "1271102073824000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680604349"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1281352897000000001"
+  },
+  {
+    "number": 1611,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1134044992619683018475802",
+      "1124972632678725554327995",
+      "2767944499936000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680580524"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "2790266633000000001"
+  },
+  {
+    "number": 1612,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "622766299156296672742461",
+      "617784168763046299360521",
+      "1520030125536000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680539367"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1532288433000000001"
+  },
+  {
+    "number": 1613,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "427155539446566298877973",
+      "423738295130993768486949",
+      "1042588992256000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680499916"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1050996968000000001"
+  },
+  {
+    "number": 1614,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "438662696211855710817992",
+      "435153394642160865131448",
+      "1070675330528000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680483568"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1079309809000000001"
+  },
+  {
+    "number": 1615,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "532356671949471548119960",
+      "528097818573875775735000",
+      "1299360899890629152",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680481141"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1309839616825231001"
+  },
+  {
+    "number": 1616,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "679414418696758286372001",
+      "673979103347184220081024",
+      "1658295231360000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680453378"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1671668580000000001"
+  },
+  {
+    "number": 1617,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "419698998986159643727774",
+      "416341406994270366577951",
+      "1024389282112000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680438955"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1032650486000000001"
+  },
+  {
+    "number": 1618,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "450519854912614038731242",
+      "446915696073313126421392",
+      "1099615943488000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680413534"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1108483814000000000"
+  },
+  {
+    "number": 1619,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "519749761164234613437412",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680394587"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1237063001000000000"
+  },
+  {
+    "number": 1620,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "473031232056642713073339",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680368701"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1037499882000000000"
+  },
+  {
+    "number": 1621,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "611827606016786282545707",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680352896"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1232114081000000000"
+  },
+  {
+    "number": 1622,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "806404635637073422297710",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680322668"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1460185246000000000"
+  },
+  {
+    "number": 1623,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "749554611537570391632476",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680316104"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1214688292000000000"
+  },
+  {
+    "number": 1624,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "815835621996594504529788",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680276825"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1189665990879382000"
+  },
+  {
+    "number": 1625,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1046740153650710246227202",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680264818"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1355847619000000000"
+  },
+  {
+    "number": 1626,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1287345366017003777868763",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680239173"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1450770751000000001"
+  },
+  {
+    "number": 1627,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1164050249875695138882744",
+      "1154737847876689577771682",
+      "1195544607232000000",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680231870"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1205186096000000000"
+  },  {
+    "number": 1629,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1216233863870497579260061",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680185742"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1186500046864382000"
+  },  {
+    "number": 1632,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "20643347691729327169541",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680163036"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "18759116059303297"
+  },
+  {
+    "number": 1633,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1495366767823826925573316",
+      "1483403833681236310168729",
+      "1332438622982501785",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680162975"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1343184095748489703"
+  }, {
+    "number": 1636,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1368319982616805550189736",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680141561"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1147102005864382000"
+  },{
+    "number": 1638,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "115870090360630983768219",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680110651"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "89151686347408419"
+  },
+  {
+    "number": 1639,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "1519731440091989759000589",
+      "1507573588571253840928584",
+      "1140494547785090864",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680110561"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1149692084460777081"
+  },
+  {
+    "number": 1640,
+    "functionName": "swapExactETHForTokens",
+    "args": [
+      "1491614811350396717272959",
+      [
+        "0x3aF492C875829B69a0803f4688C54fb867C193DF",
+        "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F"
+      ],
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680078819"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "1045840430000000001"
+  },
+  {
+    "number": 1641,
+    "functionName": "addLiquidityETH",
+    "args": [
+      "0xFfdC936d9A81BB9AC0B2d0A58126caBc2D02e67F",
+      "18180901988899419404286568",
+      "18035454772988224049052275",
+      "11479067722765161375",
+      "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+      "1680078039"
+    ],
+    "from": "0x81968C51F330E1b8252F5cA82337e3510A726fA7",
+    "value": "11571640849561654612"
+  }
+]

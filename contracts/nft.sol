@@ -1841,7 +1841,7 @@ abstract contract AccessControl is Context {
     }
 }
 
-contract NFT is Ownable, ERC721 {
+contract NFT1 is Ownable, ERC721 {
 
     uint256 public maxRoyalty = 1000;
 

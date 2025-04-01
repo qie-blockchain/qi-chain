@@ -1,17 +1,18 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/administrator/hardhart/contracts/Lock.sol": {
-      "lastModificationDate": 1703855317667,
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/Lock.sol": {
+      "lastModificationDate": 1708408138414,
       "contentHash": "8dfbe7f731cc0e6b6445381a04699c5c",
       "sourceName": "contracts/Lock.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.20",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -64,12 +65,92 @@
         "Strings"
       ]
     },
-    "/home/administrator/hardhart/contracts/erc20.sol": {
-      "lastModificationDate": 1704198485500,
-      "contentHash": "0c1fc3c0af17e581bb94147c28eb47f9",
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/erc20.sol": {
+      "lastModificationDate": 1708603920925,
+      "contentHash": "bd965a7641ec3e76f40b487eb22de718",
       "sourceName": "contracts/erc20.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context",
+        "ECDSA",
+        "EIP712",
+        "ERC20",
+        "ERC20Burnable",
+        "ERC20Pausable",
+        "ERC20Permit",
+        "IERC1155Errors",
+        "IERC20",
+        "IERC20Errors",
+        "IERC20Metadata",
+        "IERC20Permit",
+        "IERC5267",
+        "IERC721Errors",
+        "Math",
+        "MessageHashUtils",
+        "Nonces",
+        "Ownable",
+        "Pausable",
+        "ShortStrings",
+        "SignedMath",
+        "StorageSlot",
+        "Strings",
+        "Tether"
+      ]
+    },
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/marketplace.sol": {
+      "lastModificationDate": 1708708366674,
+      "contentHash": "97ede967fe38c634462e426c7f45d0d7",
+      "sourceName": "contracts/marketplace.sol",
+      "solcConfig": {
+        "version": "0.6.12",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -93,25 +174,30 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0",
-        "^0.8.0",
-        "^0.8.0",
-        "^0.8.0",
-        "^0.8.0",
-        "^0.8.0"
+        "0.6.12"
       ],
       "artifacts": [
+        "Address",
         "Context",
-        "ERC20",
+        "ERC721Holder",
+        "FeeManager",
+        "IERC165",
         "IERC20",
-        "IERC20Metadata",
+        "IERC721",
+        "IERC721Receiver",
+        "IMarketplace",
+        "INFT",
+        "OpenMarketplace",
         "Ownable",
-        "Tether"
+        "Pausable",
+        "ReentrancyGuard",
+        "SafeERC20",
+        "SafeMath"
       ]
     },
-    "/home/administrator/hardhart/contracts/nft.sol": {
-      "lastModificationDate": 1706882802611,
-      "contentHash": "16fcb6c34c076c2c3bc39eeb3d870c8f",
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/nft.sol": {
+      "lastModificationDate": 1709201337473,
+      "contentHash": "e7cdce6583fb893de1e7f90b07a99719",
       "sourceName": "contracts/nft.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -142,6 +228,101 @@
       ],
       "artifacts": [
         "AccessControl",
+        "Address",
+        "Context",
+        "ERC165",
+        "ERC721",
+        "EnumerableMap",
+        "EnumerableSet",
+        "IERC165",
+        "IERC721",
+        "IERC721Enumerable",
+        "IERC721Metadata",
+        "IERC721Receiver",
+        "NFT1",
+        "Ownable",
+        "SafeMath",
+        "Strings"
+      ]
+    },
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/staking.sol": {
+      "lastModificationDate": 1708531990132,
+      "contentHash": "cf1dba6415f9b33b692ec6844a98d25a",
+      "sourceName": "contracts/staking.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6 <0.8.0",
+        ">=0.6.6 <0.8.0",
+        "0.6.6",
+        ">=0.5.0",
+        "0.6.6"
+      ],
+      "artifacts": [
+        "Address",
+        "Context",
+        "IERC20",
+        "IQIDexStaking",
+        "Ownable",
+        "QIDexStaking",
+        "ReentrancyGuard",
+        "SafeMath"
+      ]
+    },
+    "/home/node/qi-enhancement-juan-23094159-nodejs/contracts/pawsome.sol": {
+      "lastModificationDate": 1709202992925,
+      "contentHash": "e80b9ee676e01fab4a9e9eca222b02ad",
+      "sourceName": "contracts/pawsome.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
         "Address",
         "Context",
         "ERC165",
